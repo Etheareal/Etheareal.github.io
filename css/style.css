@@ -1,0 +1,560 @@
+/*
+* @Author: Lenovo
+* @Date:   2017-05-31 19:47:47
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2017-06-02 11:20:57
+*/
+
+
+
+/*左边栏 start*/
+
+.aside .nav_ul {
+	background: #e6e6e6;
+	width: 300px;
+}
+
+.aside .nav_ul .fzpl {
+	position: relative;
+	height: 43px;
+	padding-left: 75px;
+	width: 225px;
+	font: 14px/43px "";
+}
+
+.aside .nav_ul li:hover {
+	background: #fff;
+}
+
+.aside .nav_ul li a {
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+	float: left;
+	height: auto;
+	width: auto;
+	line-height: 43px;
+}
+
+.aside .nav_ul li .icons1 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 0px;
+}
+
+.aside .nav_ul li .icons2 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -50px;
+}
+
+.aside .nav_ul li .icons3 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -100px;
+}
+
+.aside .nav_ul li .icons4 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -150px;
+}
+
+.aside .nav_ul li .icons5 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -200px;
+}
+
+.aside .nav_ul li .icons6 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -250px;
+}
+
+.aside .nav_ul li .icons7 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -300px;
+}
+
+.aside .nav_ul li ul {
+	display: none;
+	left: 300px;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	background: #fff;
+	clear: both;
+	width: 300px;
+	padding: 2px 10px 13px 16px;
+}
+
+.aside .nav_ul li:hover ul {
+	display: block;
+}
+
+.aside .nav_ul li ul li {
+	height: auto;
+	width: auto;
+	margin-top: 10px;
+	text-align: left;
+	float: left;
+}
+
+.aside .nav_ul li ul li a {
+	color: #515050;
+	font-size: 12px;
+	display: block;
+	width: auto;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 7px;
+	white-space: nowrap;
+}
+
+.aside .nav_ul li ul .sg {
+	width: 1px;
+	background: #b8b8b8;
+	height: 18px;
+}
+
+.aside .aside_type {
+	width: 266px;
+	padding-left: 34px;
+	height: 359px;
+	background: #b8b8b8;
+	border-bottom: 1px #000 solid;
+	border-top: 1px solid #000;
+}
+
+.aside .aside_type li {
+	height: 46px;
+	width: 231px;
+	float: left;
+	vertical-align: top;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+
+.aside .aside_type li:first-child {
+	font-size: 12px;
+	color: #000;
+	height: 40px;
+	line-height: 40px
+}
+
+.aside .aside_type li:nth-child(2) {
+	background: url(../images/game_type4.jpg) no-repeat -5px 0px;
+}
+
+.aside .aside_type li:nth-child(2):hover {
+	background: url(../images/game_type4.jpg) no-repeat -264px 0px;
+}
+
+.aside .aside_type li:nth-child(3) {
+	background: url(../images/game_type4.jpg) no-repeat -5px -52px;
+}
+
+.aside .aside_type li:nth-child(3):hover {
+	background: url(../images/game_type4.jpg) no-repeat -264px -52px;
+}
+
+.aside .aside_type li:nth-child(4) {
+	background: url(../images/game_type4.jpg) no-repeat -5px -100px;
+}
+
+.aside .aside_type li:nth-child(4):hover {
+	background: url(../images/game_type4.jpg) no-repeat -264px -100px;
+}
+
+.aside .aside_type li:nth-child(5) {
+	background: url(../images/game_type4.jpg) no-repeat -5px -148px;
+}
+
+.aside .aside_type li:nth-child(5):hover {
+	background: url(../images/game_type4.jpg) no-repeat -264px -148px;
+}
+
+.aside .aside_type li:nth-child(6) {
+	background: url(../images/game_type4.jpg) no-repeat -5px -197px;
+}
+
+.aside .aside_type li:nth-child(6):hover {
+	background: url(../images/game_type4.jpg) no-repeat -264px -197px;
+}
+
+.aside .aside_type li:nth-child(7) {
+	background: url(../images/game_type4.jpg) no-repeat -5px -247px;
+}
+
+.aside .aside_type li:nth-child(7):hover {
+	background: url(../images/game_type4.jpg) no-repeat -264px -247px;
+}
+
+.aside .aside_hot {
+	width: 300px;
+	margin-top: 6px;
+}
+
+.title {
+	font-size: 14px;
+	line-height: 35px;
+	height: 35px;
+	color: #000;
+	padding-left: 30px;
+	background: url(../images/bg_case.jpg) 0 repeat-x;
+}
+
+.aside .aside_hot ul {
+	width: 276px;
+	background: #e6e6e6;
+	padding: 25px 0 16px 24px;
+}
+
+.aside .aside_hot ul li {
+	height: 110px;
+	padding-bottom: 26px;
+	position: relative;
+	overflow: hidden;
+}
+
+.aside .aside_hot ul li a {
+	display: block;
+	overflow: hidden;
+}
+
+.aside .aside_hot ul li a img {
+	height: 110px;
+	width: 110px;
+	float: left;
+}
+
+.aside .aside_hot ul li:nth-of-type(1) a .hot_icons {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/icon.png);
+	background-position: 0px -450px;
+}
+
+.aside .aside_hot ul li:nth-of-type(2) a .hot_icons {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/icon.png);
+	background-position: -50px -450px;
+}
+
+.aside .aside_hot ul li:nth-of-type(3) a .hot_icons {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/icon.png);
+	background-position: -100px -450px;
+}
+
+.aside .aside_hot ul li a .hot_name {
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 20px;
+	float: left;
+	padding-left: 8px;
+	width: 140px;
+}
+
+.aside .aside_act {
+	width: 300px;
+}
+
+.aside .aside_act ul {
+	background: #e6e6e6;
+	padding: 14px 0 17px 0;
+}
+
+.aside .aside_act ul li {
+	width: 240px;
+	height: 200px;
+	padding: 12px 30px;
+}
+
+.aside .aside_act1 ul {
+	background: #e6e6e6;
+	padding-top: 28px;
+	padding-bottom: 13px;
+	border-top: 1px solid #15191e;
+}
+
+.aside .aside_act1 ul li {
+	width: 240px;
+	height: 100px;
+	padding: 0 30px 18px 30px;
+}
+
+
+/*--左边栏end--*/
+
+
+/*--main部分开始--*/
+
+.main {
+	overflow: hidden;
+	padding-left: 1px;
+	margin-top: 1px;
+}
+
+#sliderBox {
+	height: 301px;
+	position: relative;
+	overflow: hidden;
+}
+
+#sliderList,
+#sliderNav {
+	position: absolute;
+}
+
+#sliderNav {
+	display: none;
+	right: 20px;
+	bottom: 15px;
+}
+
+#sliderNav li {
+	float: left;
+	width: 18px;
+	height: 18px;
+	margin: 0 6px;
+	background: rgb(184, 184, 184);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#sliderNav li:hover,
+#sliderNav li.hover {
+	background: rgb(238, 114, 7);
+}
+
+.main .box_smallEye {
+	height: 98px;
+	margin: 1px 0px 1px 0px;
+	width: 900px;
+}
+
+.main .box_smallEye li {
+	background: #353a40;
+	margin-right: 1px;
+	float: left;
+	padding: 12px;
+	width: 200px;
+	height: 74px;
+}
+
+.main .box_smallEye li a {
+	width: 200px;
+	height: 74px;
+}
+
+.main .box_smallEye li a img {
+	width: 200px;
+	height: 74px;
+	border: 0;
+}
+
+.main .box_tab {
+	height: 260px;
+	width: 100%;
+}
+
+.main .box_tab .tab_name {
+	height: 36px;
+	font-size: 14px;
+	line-height: 36px;
+}
+
+.main .box_tab .tab_name li {
+	height: 36px;
+	width: 33.21%;
+	text-align: center;
+	cursor: pointer;
+	background: #20252a;
+}
+
+.main .box_tab .tab_name li.hover {
+	background: #353a40;
+}
+
+.main .box_tab .tab_name li span {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin-right: 8px;
+	vertical-align: middle;
+	padding-bottom: 3px;
+}
+
+
+
+.main .box_tab .tab_name li span.icon_hot {
+	background-position: -50px -150px;
+}
+
+.main .box_tab .tab_name li span.icon_new {
+	background-position: -50px -200px;
+}
+
+.main .box_tab .tab_name li span.icon_sale {
+	background-position: -50px -250px;
+}
+
+.main .box_tab .tab_detail {
+	overflow: hidden;
+	height: 224px;
+	position: relative;
+}
+
+.main .box_tab .tab_detail .tab_show {
+	width: 900px;
+	height: 224px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #353a40;
+}
+
+.tab_show li {
+	padding: 12px 0px 0px 55px;
+	float: left;
+}
+
+.tab_show li a {
+	display: block;
+	position: relative;
+}
+
+.tab_show li a img {
+	width: 155px;
+	height: 155px;
+	margin-bottom: 0px;
+}
+
+.tab_show li a div {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.tab_show li a div.mark_hot {
+	background-position: 0px -400px;
+}
+
+.tab_show li a div.mark_new {
+	background-position: -50px -400px;
+}
+
+.tab_show li a div.mark_sale {
+	background-position: -100px -400px;
+}
+
+.tab_show li a span {
+	cursor: pointer;
+	font-size: 12px;
+	color: #888;
+	height: 32px;
+	overflow: hidden;
+	line-height: 16px;
+	display: block;
+	width: 160px;
+}
+
+.dn {
+	display: none;
+}
+
+
+/*商品列表*/
+
+.main_goods {
+	margin-top: 7px;
+	overflow: hidden;
+}
+
+.title a {
+	color: #333333;
+	float: right;
+	margin-right: 20px;
+}
+
+.main_goods .goods_list {
+	background: #e6e6e6;
+	padding-top: 22px;
+	width: 900px;
+	padding-bottom: 7px;
+}
+
+.main_goods .goods_list li {
+	float: left;
+	padding: 0px 0px 6px 52px;
+}
+
+.goods_list li a img {
+	width: 155px;
+	height: 155px;
+	vertical-align: bottom;
+}
+
+.goods_list li a span {
+	font-size: 12px;
+	cursor: pointer;
+	line-height: 16px;
+	overflow: hidden;
+	display: block;
+	width: 160px;
+}
+
+.goods_list li a span.goods_name {
+	height: 32px;
+	padding-top: 6px;
+	margin-top: 0px;
+}
+
+.goods_cost {
+	color: #000;
+	height: 26px;
+}
+
+
+/*商品主体部分end*/
+
+
+
+

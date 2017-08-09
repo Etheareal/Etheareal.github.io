@@ -1,0 +1,138 @@
+.g-hd {
+    height: 130px;
+    .g-in {
+        width: 1000px;
+        margin: 0 auto;
+        .m-logo {
+            float: left;
+            width: 300px;
+            height: 60px;
+            margin-top: 35px;
+            background: url(../images/sprite.png) no-repeat -50px -18px;
+        }
+        .m-tr-block {
+            float: right;
+            font-size: 18px;
+            margin-top: 50px;
+            a {
+                color: #ca5252;
+            }
+        }
+    }
+}
+
+.g-bd {
+    position: relative;
+    width: 1000px;
+    padding-bottom: 55px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 3px #cbc9c9;
+    .m-tab {
+        width: 320px;
+        margin: 0 auto;
+        padding-top: 44px;
+        padding-bottom: 24px;
+        .select {
+            background: #ca5252;
+            border-color: #ca5252;
+            color: #fff;
+        }
+        .left {
+            cursor: pointer;
+            width: 159px;
+            border: solid 1px #ccc;
+            border-right: 0;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            font-size: 16px;
+            float: left;
+        }
+        .right {
+            cursor: pointer;
+            width: 159px;
+            border: solid 1px #ccc;
+            border-left: 0;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            font-size: 16px;
+            float: right;
+            position: relative;
+            .new {
+                position: absolute;
+                font-size: 9px;
+                color: #fff;
+                background: #ca5252;
+                height: 12px;
+                line-height: 9px;
+                width: 26px;
+                top: 4px;
+                border-radius: 2px;
+                right: 12px;
+            }
+        }
+    }
+    .zh {
+        margin-left: 330px;
+        ul {
+            width: 286px;
+            margin-top: 30px;
+            li {
+                position: relative;
+                width: 286px;
+                height: 34px;
+                margin-left: 15px;
+                line-height: 34px;
+                padding: 0 10px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+                i {
+                    display: inline-block;
+                    position: absolute;
+                    top: 13px;
+                    right: 5px;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../images/1.png) no-repeat;
+                    display: none;
+                }
+            }
+        }
+        #btn {
+            width: 306px;
+            height: 34px;
+            margin-left: 15px;
+            background: #ca5252;
+            ;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 100px;
+        }
+    }
+    p {
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        margin-left: 18px;
+        color: #ccc;
+    }
+    span {
+        display: none;
+    }
+}
+
+.m-cp {
+    padding: 30px 0;
+    p {
+        padding-bottom: 10px;
+        text-align: center;
+        color: #b1b1b1;
+        a {
+            padding: 0 6px;
+            color: #b1b1b1;
+        }
+    }
+}

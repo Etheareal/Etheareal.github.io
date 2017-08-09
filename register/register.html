@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+	</head>
+
+	<body>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<div class="g-hd">
+			<div class="g-in">
+				<a href="http://reg.163.com/" target="_blank">
+					<div class="m-logo"></div>
+				</a>
+				<div class="m-tr-block">已有帐号？去
+					<a id="btn_Login" href="../index.html">登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="g-bd">
+			<div class="clear m-tab">
+				<div class="left select">普通帐号注册</div>
+				<div class="right ">靓号注册
+					<p class="new">new</p>
+				</div>
+			</div>
+			<div class="zh">
+				<ul>
+					<li>帐号:<input type="text" id="" placeholder="网易邮箱/手机号/其他邮箱" /><i></i></li>
+					<p class="jg"><span>4-16个以字母开头、可带数字、“_”的字串</span></p>
+					<li>设 置 密 码:<input type="password" id="" /><i></i></li>
+					<p class="jg"><span>6-15个数字，字母，下划线</span></p>
+					<li>确 认 密 码:<input type="password" id="" /><i></i></li>
+					<p class="jg"><span>6-15个数字，字母，下划线</span></p>
+					<li>邮 箱 验 证:<input type="text" id="" /><i></i></li>
+					<p class="jg"><span>5-15个数字,字母,下划线,只能使用163,qq,sina邮箱 就是吊</span></p>
+					<li>手 机 验 证:<input type="text" id="" /><i></i></li>
+					<p class="jg"><span>以13，15，18开头的十一位数字</span></p>
+				</ul>
+				<input type="button" id="btn" value="注册" />
+			</div>
+			<div>
+				<a href="https://id.163.com/gj/?from=webzj_zc" style="display:block;margin:0 auto;width:900px;height:180px;overflow:hidden;border-radius:2px;">
+					<img src="images/app_xc_small_170402.png" />
+				</a>
+			</div>
+		</div>
+
+		<div class="g-ft">
+			<div class="bx">
+				<div class="m-cp">
+					<p>
+						<a href="http://corp.163.com/eng/about/overview.html" target="_blank">About NetEase</a>-
+						<a href="http://gb.corp.163.com/gb/about/overview.html" target="_blank">公司简介</a>-
+						<a href="http://gb.corp.163.com/gb/contactus.html" target="_blank">联系方式</a>-
+						<a href="http://reg.163.com/help/help_oauth2.html?v=20141215" target="_blank">OAuth2.0认证</a>-
+						<a href="http://corp.163.com/gb/job/job.html" target="_blank">招聘信息</a>-
+						<a href="http://help.163.com/" target="_blank">客户服务</a>-
+						<a href="http://gb.corp.163.com/gb/legal.html" target="_blank">相关法律</a>-
+						<a href="http://emarketing.biz.163.com/" target="_blank">网络营销</a>
+					</p>
+					<p>网易公司版权所有 ©1997-2017</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var aLi = document.getElementsByTagName("li");
+		var aIpt = document.getElementsByTagName("input");
+		var oP = document.getElementsByClassName("jg");
+		var aI = document.getElementsByTagName("i");
+		var aSpan = document.getElementsByTagName("span");
+		var btn = document.getElementById("btn");
+		console.log(oP);
+		var a = false;
+		var b = false;
+		var c = false;
+		var d = false;
+		
+			
+		
+		aIpt[0].onchange = function() {
+			var reg = /^\w{6,16}$/; //6-16个、可带字母数字、“_”的字串
+			var str = aIpt[0].value;
+			if(reg.test(str)) {
+				//					console.log(aI);
+				aI[0].style.display = "inline-block";
+				oP[0].style.color = "#fff";
+				aLi[0].style.borderColor = "#ccc";
+				a = true;
+			} else {
+				oP[0].style.color = 'red';
+				oP[0].innerHTML = '错误，仅支持6-16个、可带数字、，字母“_”';
+				aI[0].style.display = "none"
+				aLi[0].style.borderColor = 'red';
+			}
+		}
+		aIpt[1].onchange = function() {
+			var reg = /^\w{6,15}$/; //6-15个数字，字母，下划线
+			var str = aIpt[1].value;
+			if(reg.test(str)) {
+				aI[1].style.display = "inline-block";
+				oP[1].style.color = "#fff";
+				aLi[1].style.borderColor = "#ccc";
+				
+			} else {
+				oP[1].style.color = 'red';
+				oP[1].innerHTML = '格式错误，仅支持6-15个数字，字母，下划线';
+				aI[1].style.display = "none"
+				aLi[1].style.borderColor = 'red';
+			}
+		}
+		aIpt[2].onchange = function() {
+			if(aIpt[1].value == aIpt[2].value) {
+				aI[2].style.display = "inline-block";
+				oP[2].style.color = "#fff";
+				aLi[2].style.borderColor = "#ccc";
+				b = true;
+			} else {
+				oP[2].style.color = 'red';
+				oP[2].innerHTML = '请保持两次密码输入一致';
+				aI[2].style.display = "none"
+				aLi[2].style.borderColor = 'red';
+			}
+		}
+		aIpt[3].onchange = function() {
+			var reg = /^\w{5,15}@(qq||163||sina)(\.com)$/; //5-15个数字,字母,下划线,只能使用163,qq,sina邮箱 就是任性
+			var str = aIpt[3].value;
+			if(reg.test(str)) {
+				aI[3].style.display = "inline-block";
+				oP[3].style.color = "#fff";
+				aLi[3].style.borderColor = "#ccc";
+				c = true;
+			} else {
+				oP[3].style.color = 'red';
+				oP[3].innerHTML = '长度5-15，只能使用163,qq,sina邮箱 就是任性';
+				aI[3].style.display = "none"
+				aLi[3].style.borderColor = 'red';
+			}
+		}
+		aIpt[4].onchange = function() {
+			var reg = /^1[3|5|8]\d{9}$/; //以13，15，18开头的十一位数字
+			var str = aIpt[4].value;
+			if(reg.test(str)) {
+				aI[4].style.display = "inline-block";
+				oP[4].style.color = "#fff";
+				aLi[4].style.borderColor = "#ccc";
+				d = true;
+			} else {
+				oP[4].style.color = 'red';
+				oP[4].innerHTML = '只能以13，15，18开头的十一位数字';
+				aI[4].style.display = "none"
+				aLi[4].style.borderColor = 'red';
+			}
+		}
+		btn.onclick = function() {
+			for(var i = 0; i < aIpt.length; i++) {
+				if(aIpt[i].value == '') {
+					oP[i].innerHTML = '不能为空';
+					oP[i].style.color = 'red';
+
+				}
+
+			}
+		}
+		for(var i = 0; i < oP.length; i++) {
+			aIpt[i].onfocus = function() {
+				this.parentNode.nextElementSibling.children[0].style.display = "block";
+				//					console.log(1);
+			}
+			aIpt[i].onblur = function() {
+				this.parentNode.nextElementSibling.children[0].style.display = "none";
+			}
+		}
+		$(function() {
+			$("#btn").click(function() {
+				if(a&&b&&c&&d){
+					setCookie(aIpt[0].value,aIpt[1].value,7);
+//					location.href = "../index.html";
+					console.log(getCookie(aIpt[0].value));
+					
+				}
+			})
+		})
+	</script>
+
+</html>

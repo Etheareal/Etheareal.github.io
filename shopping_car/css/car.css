@@ -1,0 +1,260 @@
+.nav_center .nav_ul {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	background: #e6e6e6;
+	width: 300px;
+	display: none;
+	z-index: 9999;
+	border-bottom: 1px solid #000;
+}
+
+.nav_center .nav_ul .fzpl {
+	position: relative;
+	height: 43px;
+	padding-left: 75px;
+	width: 225px;
+	font: 14px/43px "";
+}
+
+.nav_center .nav_ul li:hover {
+	background: #fff;
+}
+
+.nav_center .nav_ul li a {
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+	float: left;
+	height: auto;
+	width: auto;
+	line-height: 43px;
+}
+
+.nav_center .nav_ul li .icons1 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 0px;
+}
+
+.nav_center .nav_ul li .icons2 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -50px;
+}
+
+.nav_center .nav_ul li .icons3 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -100px;
+}
+
+.nav_center .nav_ul li .icons4 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -150px;
+}
+
+.nav_center .nav_ul li .icons5 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -200px;
+}
+
+.nav_center .nav_ul li .icons6 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -250px;
+}
+
+.nav_center .nav_ul li .icons7 {
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	top: 13px;
+	left: 40px;
+	background: url(../images/icon.png) no-repeat 0 -300px;
+}
+
+.nav_center .nav_ul li ul {
+	display: none;
+	left: 300px;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	background: #fff;
+	clear: both;
+	width: 300px;
+	padding: 2px 10px 13px 16px;
+}
+
+.nav_center .nav_ul li:hover ul {
+	display: block;
+}
+
+.nav_center .nav_ul li ul li {
+	height: auto;
+	width: auto;
+	margin-top: 10px;
+	text-align: left;
+	float: left;
+}
+
+.nav_center .nav_ul li ul li a {
+	color: #515050;
+	font-size: 12px;
+	display: block;
+	width: auto;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 7px;
+	white-space: nowrap;
+}
+
+.nav_center .nav_ul li ul .sg {
+	width: 1px;
+	background: #b8b8b8;
+	height: 18px;
+}
+
+.progress {
+	width: 1000px;
+	padding: 27px 0 19px;
+	border-top: 1px solid #000;
+	margin: 0 auto;
+	background: #e6e6e6;
+}
+
+.progress ul {
+	width: 756px;
+	margin: 0 auto;
+	background: url(../images/step.jpg) no-repeat 0 0;
+}
+
+.progress li {
+	float: left;
+	width: 189px;
+	font-size: 14px;
+	color: #474646;
+	text-align: center;
+}
+
+.progress li span {
+	display: block;
+	padding-top: 60px;
+}
+
+.progress li.step1 .active {
+	color: #000;
+	background: url(http://nos.netease.com/blz/1/bmall/images/new-edition/buyer/step.jpg) no-repeat -756px 0;
+}
+
+#cart {
+	background-color: #464646;
+}
+
+#cart table {
+	width: 100%;
+	color: #464646;
+	background-color: #fff;
+}
+
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+#cart table th {
+	background: #b8b8b8;
+	color: #474646;
+	border: none;
+	font-size: 14px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+}
+
+#cart .goPay {
+	border: none;
+	background: #b8b8b8;
+	color: #474646;
+	text-align: right;
+	padding: 20px 20px 10px 0;
+}
+
+#cart .goPay p {
+	margin-bottom: 5px;
+}
+
+#cart .goPay span.re {
+	float: left;
+	margin-left: 50px;
+}
+
+#cart .goPay span.re a {
+	color: #099AD1;
+	margin-right: 30px;
+}
+
+#cart .goPay strong {
+	font-weight: normal;
+	padding-right: 40px;
+}
+
+.font_red2 {
+	color: #D02513;
+}
+
+#cart .goPay a.goAgain {
+	width: 108px;
+	height: 26px;
+	vertical-align: bottom;
+	line-height: 26px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	background: url(../images/btn.jpg) no-repeat 0 -118px;
+}
+
+#cart .goPay a.goBtn {
+	width: 107px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 42px;
+	margin: 0 0 0 10px;
+	background: url(../images/btn.jpg) no-repeat 0 -154px;
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+	display: inline-block;
+}
+
+form {
+	display: block;
+}

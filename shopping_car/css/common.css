@@ -1,12 +1,11 @@
 .bx {
-	width: 1200px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
 body {
-	background: #15191e;
+	background-color: #15191e;
 }
-
 
 /* 头部Start */
 
@@ -50,7 +49,6 @@ body {
 }
 
 .header .search #txt {
-	height: 24px;
 	width: 230px;
 	font-size: 14px;
 	border: 0 none;
@@ -76,16 +74,15 @@ body {
 .header .shopping_car {
 	position: absolute;
 	top: 48px;
-	right: 73px;
+	right:173px;
 	height: 30px;
 	width: 260px;
 	background: url(../images/shopping_cart.jpg) no-repeat;
 }
-
 .header .shopping_car:hover {
 	position: absolute;
 	top: 48px;
-	right: 73px;
+	right: 173px;
 	height: 30px;
 	width: 260px;
 	background: url(../images/shopping_cart.jpg) no-repeat 0px -30px;
@@ -109,28 +106,26 @@ body {
 	line-height: 30px;
 	padding-left: 58px;
 }
-
 .header .shopping_car .mark_count {
-	position: absolute;
-	top: -15px;
-	left: 130px;
-	font-size: 12px;
-	color: #fff;
-	line-height: 16px;
-	text-align: center;
-	min-width: 20px;
-	height: 20px;
-	background-position: -49px -300px;
+    position: absolute;
+    top: -15px;
+    left: 130px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 16px;
+    text-align: center;
+    min-width: 20px;
+    height: 20px;
+    background-position: -49px -300px;
 }
-
 .iconx {
 	background: url(../images/icon.png) no-repeat;
 }
-
+.dn {
+	display: none;
+}
 
 /* 头部结束 */
-
-
 /* nav部分开始 */
 
 .nav {
@@ -150,38 +145,41 @@ body {
 	float: left;
 }
 
-.nav ul li:nth-child(4) {
+.nav ul li.sb33{
 	padding-left: 20px;
 	width: 90px;
 }
 
-.nav ul li:nth-child(2) {
+.nav ul li.sb11 {
 	background: url(../images/bg_nav_hover.jpg) repeat-x;
 }
 
-.nav ul li:nth-child(3):hover {
+.nav ul li.sb22:hover {
 	background: url(../images/bg_nav_hover.jpg) repeat-x;
 }
 
-.nav ul li:nth-child(4):hover {
+.nav ul li.sb33:hover {
 	background: url(../images/bg_nav_hover.jpg) repeat-x;
 }
 
-.nav ul li:last-child {
+.nav ul li.sb44 {
 	float: right;
 	padding-left: 50px;
 	width: 60px;
 }
 
 .nav ul .nav_center {
+	position: relative;
 	width: 280px;
 	padding-left: 20px;
 	border-right: 1px solid #00446B;
 	height: 50px;
 	text-align: left;
-	background: url(../images/bg_nav_side.jpg) 0 -100px no-repeat;
+	background: url(../images/bg_nav_side.jpg) 0 0 no-repeat;
 }
-
+.nav ul .nav_center:hover{
+	background: url(../images/bg_nav_side.jpg) 0 -50px no-repeat;
+}
 .nav ul li .hot {
 	position: absolute;
 	top: 2px;
@@ -203,15 +201,17 @@ body {
 .nav ul li a {
 	color: #fff;
 }
-
+.nav ul .nav_center a{
+	display: block;
+	height: 50px;
+}
 
 /* nav部分end */
-
-
 /*footer部分start*/
 
 .footer {
 	margin-top: 80px;
+	overflow: hidden;
 }
 
 .footer .partner {
@@ -372,20 +372,15 @@ body {
 	font-size: 12px;
 	color: #fff;
 }
-
-
 /*footer end*/
-
-
 /*边栏样式start*/
-
 .qqzixun {
 	position: fixed;
-	z-index: 2;
 	right: 10px;
 	bottom: 50%;
 	width: 100px;
 	height: 102px;
+	z-index: 2;
 	background: url(../images/qq1.png) no-repeat;
 }
 
@@ -415,7 +410,6 @@ body {
 	width: 100px;
 	background: url(../images/gotoTop2.png) no-repeat;
 }
-
 .dly {
 	position: fixed;
 	width: 420px;

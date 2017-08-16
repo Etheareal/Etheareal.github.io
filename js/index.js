@@ -34,10 +34,17 @@ $(function() {
 		$(".dly").css("display", "none");
 		$("#layer").css("display", "none");
 
-//				if(getCookie(str1) == ($("#mm1").val())) {
-//					$(".dly").css("display", "none");
-//					$("#layer").css("display", "none");
-//				}
+		if(getCookie(str1) == ($("#mm1").val())) {
+			alert("登陆成功");
+			$("#zh1").val("");
+			$("#mm1").val("");
+			$(".dly").css("display", "none");
+			$("#layer").css("display", "none");
+			$(".nav_hi").text(str1);
+			$(".dldl").css("display", "none");
+			$(".nav_hi").css("background", "none");
+		}else{alert("密码错误")}
+		
 		console.log(str1);
 		console.log(getCookie(str1));
 	})

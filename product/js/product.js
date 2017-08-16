@@ -54,6 +54,34 @@ $(function() {
 			$(this).addClass("bkys").siblings().removeClass("bkys");
 		})
 	})
+	
+	//加入购物车
+	var obj = localStorage.getItem('cart')?JSON.parse(localStorage.getItem('cart')):{};
+	var num = 0;
+	$('#p_num_up').click(function(){
+		var val = $(this).prev().val();
+		val++;
+		$(this).prev().val(val);
+	})
+	$('#p_num_down').click(function(){
+		var val = $(this).next().val();
+		val--;
+		if(val<=1){
+			val = 1;
+		}
+		$(this).next().val(val);
+	})
+	$("#buy").click(function(){
+		if(id in obj){
+			obj[id]+= +$('#buy_num').val();
+		}else{
+//			localStorage.setItem('cart',id)
+			obj[id]=+$('#buy_num').val();
+		}
+		console.log(obj);
+		var str3 = JSON.stringify(obj)
+		localStorage.setItem('cart',str3);
+	})
 
 	$.ajax({
 		type: "get",

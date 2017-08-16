@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<div class="g-hd">
 			<div class="g-in">
@@ -180,7 +180,8 @@
 			$("#btn").click(function() {
 				if(a&&b&&c&&d){
 					setCookie(aIpt[0].value,aIpt[1].value,7);
-//					location.href = "../index.html";
+					alert("注册成功");
+					location.href = "../index.html";
 					console.log(getCookie(aIpt[0].value));
 					
 				}

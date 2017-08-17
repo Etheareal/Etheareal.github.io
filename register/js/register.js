@@ -13,7 +13,7 @@ function getCookie(name) {
 function setCookie(name, value, n) {
 	var oDate = new Date();
 	oDate.setDate(oDate.getDate() + n);
-	document.cookie = name + "=" + value + ";expires=" + oDate;
+	document.cookie = name + "=" + value + ";expires=" + oDate+";path=/";
 }
 
 function removeCookie(name) {

@@ -119,7 +119,7 @@ body {
     background-position: -49px -300px;
 }
 .iconx {
-	background: url(../images/icon.png) no-repeat;
+	background: url(../images/icon.png) no-repeat -150px -450px;
 }
 .dn {
 	display: none;

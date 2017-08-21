@@ -422,7 +422,7 @@
     vertical-align: top;    
 }   
 .icon_hot {
-    background-position: -150px -450px;
+    /*background-position: 150px 450px;*/
     height: 40px;
     width: 40px;
     position: absolute;
